@@ -1,0 +1,34 @@
+.bannerContainer {
+  background-color: #FFEFAC;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.titleBanner {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 60%;
+  padding-top: 80px;
+  color: #E14A11;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+.button-banner{
+  margin-left: 77%;
+  margin-top: 10%;
+  a {
+    text-decoration: none;
+    border-style: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 250px;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+
+  }
+}

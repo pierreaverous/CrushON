@@ -1,0 +1,22 @@
+<div class="container-header">
+
+  <div class="image">
+
+  </div>
+
+  <p class="button-log">
+    <% if user_signed_in? %>
+      <%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete%>
+        <%else %>
+          <%= link_to 'Se Connecter' , new_user_session_path %>
+            <% end %>
+  </p>
+
+</div>
+<div class="bannerContainer">
+  <p class="titleBanner">Bienvenue sur la nouvelle plateforme de crushON la plus grande plateforme de mode Seconde main</p>
+  <p class="button-banner">
+    <%= link_to "Voir les vendeur" , vendeurs_path %>
+  </p>
+
+</div>

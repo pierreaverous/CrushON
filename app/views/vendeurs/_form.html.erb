@@ -1,0 +1,27 @@
+<%= form_with(model: vendeur) do |form| %>
+  <% if vendeur.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(vendeur.errors.count, "error") %> prohibited this vendeur from being saved:</h2>
+
+      <ul>
+        <% vendeur.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form">
+    <%= form.label :nameshop, style: "display: block" %>
+    <%= form.text_field :nameshop %>
+  </div>
+
+  <div class="form">
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="button-login">
+    <%= form.submit %>
+  </div>
+<% end %>

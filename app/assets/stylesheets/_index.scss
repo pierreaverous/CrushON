@@ -1,0 +1,32 @@
+.container-header{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.image {
+  background-image: url(image-path('crushon.png'));
+  width: 170px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.button-log {
+  text-decoration: none;
+  background-color: #E14A11;
+  width: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  }
+}

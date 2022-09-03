@@ -1,0 +1,70 @@
+.cardVendeur {
+  margin-top: 50px;
+  background-color: #FFEFAC;
+  width:30%;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+  
+  
+}
+
+.buttonVendeur {
+
+  display: flex;
+ 
+  a {
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 200px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+   
+  }
+}
+
+.container-list{
+  background-color:rgb(244, 244, 244);
+  height: auto;
+}
+
+#vendeurs{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.titleCard{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #E14A11;
+}
+
+.button-Ajout {
+  
+  margin-top: 20px;
+  
+  a {
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 250px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}
