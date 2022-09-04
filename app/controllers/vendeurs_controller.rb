@@ -8,6 +8,7 @@ class VendeursController < ApplicationController
 
   # GET /vendeurs/1 or /vendeurs/1.json
   def show
+    @Produits = Produit.where(vendeur_id: params[:id])
   end
 
   # GET /vendeurs/new

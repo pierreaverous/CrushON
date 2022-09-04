@@ -1,10 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green">
+  <%= notice %>
+</p>
 
 <%= render @vendeur %>
 
-<div>
-  <%= link_to "Edit this vendeur", edit_vendeur_path(@vendeur) %> |
-  <%= link_to "Back to vendeurs", vendeurs_path %>
+  <% if @Produits %>
+    <%= render @Produits %>
+      <<% end %>
 
-  <%= button_to "Destroy this vendeur", @vendeur, method: :delete %>
-</div>
+        <div class="sign-in">
+          <p>
+            <%= link_to "go produit" , new_product_path %>
+          </p>
+        </div>
+        <div>
+          <%= link_to "Edit this vendeur" , edit_vendeur_path(@vendeur) %> |
+            <%= link_to "Back to vendeurs" , vendeurs_path %>
+
+              <%= button_to "Destroy this vendeur" , @vendeur, method: :delete %>
+        </div>
