@@ -1,22 +1,22 @@
 .cardVendeur {
   margin-top: 50px;
   background-color: #FFEFAC;
-  width:30%;
+  width: 30%;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
-  
-  
+
+
 }
 
 .buttonVendeur {
 
   display: flex;
- 
+
   a {
     border-style: none;
     text-decoration: none;
@@ -29,30 +29,41 @@
     border-radius: 8px;
     display: flex;
     justify-content: center;
-   
+
   }
 }
 
-.container-list{
-  background-color:rgb(244, 244, 244);
+.container-list {
+  background-color: rgb(244, 244, 244);
   height: auto;
 }
 
-#vendeurs{
+
+.container-list-produit {
+  background-color: #f4f4f4;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+#vendeurs {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.titleCard{
+.titleCard {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #E14A11;
 }
 
 .button-Ajout {
-  
+
   margin-top: 20px;
-  
+
   a {
     border-style: none;
     text-decoration: none;
@@ -68,3 +79,26 @@
     margin-bottom: 70px;
   }
 }
+
+.container-vendeur {
+  display: flex;
+  justify-content: center;
+
+}
+
+.title-list {
+  color: #E14A11;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin-left: 19px;
+}
+
+.imageCardVendeur{
+  background-image: url(image-path('avatar'));
+   width: 36%;
+   height: 100%;
+   border-radius: 8px;
+   background-repeat: no-repeat;
+   background-size: contain
+
+ }

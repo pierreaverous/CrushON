@@ -1,19 +1,27 @@
-<p style="color: green"><%= notice %></p>
-
+<!-- <p style="color: green">
+  <%= notice %>
+</p>
+ -->
 
 <div class="container-header">
 
   <div class="image">
 
   </div>
-
-  <p class="button-log">
-    <% if user_signed_in? %>
+  <div class="nav">
+    <p class="button-log">
+      <% if user_signed_in? %>
       <%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete%>
-        <%else %>
-          <%= link_to 'Se Connecter' , new_user_session_path %>
-            <% end %>
-  </p>
+      <%else %>
+      <%= link_to 'Se Connecter' , new_user_session_path %>
+      <% end %>
+    </p>
+    <p class="button-log">
+      <%= link_to "Acceuil" , root_path %>
+  
+    </p>
+    
+</div>
 
 </div>
 
@@ -26,12 +34,19 @@
   <div id="vendeurs">
     <% @vendeurs.each do |vendeur| %>
       <%= render vendeur %>
-    <% end %>
+        <% end %>
   </div>
 </div>
-  <p class="button-Ajout">
-     <%= link_to "Ajouter un vendeur", new_vendeur_path %>
-  </p>
+<p class="button-Ajout">
+  <%= link_to "Ajouter un vendeur" , new_vendeur_path %>
+</p>
+
+
+<div class="footer">
+  <a class="footer-text">Nous contacter</a>
+  <div class="logo">
+  </div>
+  <a class="footer-text">A propos</a>
  
-
-
+  <p></p>
+</div>

@@ -11,31 +11,31 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
+  <div class="form">
+    <%= form.label :titre, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
 
-  <div>
+  <div class="form">
     <%= form.label :prix, style: "display: block" %>
     <%= form.text_field :prix %>
   </div>
-  <div>
+  <div class="form">
     <%= form.label :marque, style: "display: block" %>
     <%= form.text_field :marque %>
   </div>
 
-  <div>
+  <div class="form">
     <%= form.label :stock, style: "display: block" %>
     <%= form.number_field :stock %>
   </div>
 
-  <div>
+  <div class="form">
     <%= form.label :vendeur_id, style: "display: block" %>
     <%= form.text_field :vendeur_id %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="button-login">
+    <%= form.submit value = 'Crée le produit' %>
   </div>
 <% end %>

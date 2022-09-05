@@ -22,17 +22,17 @@
 <div class="container">
   <div class="background">
     <div class="container-form">
-      <h2 class="title-form">Modifier le produit</h2>
-      <%= render "form", produit: @produit %>
+      <h2 class="title-form">Nouveau produit</h2>
+      <%= render "form" , produit: @produit %>
 
         <br>
-        <div class="sign-up">
-        
+        <div class="buttonBack">
+
+          <%= link_to "Retour vendeur" , vendeur_path %>
         </div>
     </div>
   </div>
 </div>
-
 <div class="footer">
   <a class="footer-text">Nous contacter</a>
   <div class="logo">

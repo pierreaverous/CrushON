@@ -1,10 +1,48 @@
-<p style="color: green"><%= notice %></p>
+<!-- <p style="color: green">
+  <%= notice %>
+</p>
+ -->
+<div class="container-header">
 
-<%= render @produit %>
+  <div class="image">
 
-<div>
-  <%= link_to "Edit this produit", edit_produit_path(@produit) %> |
-  <%= link_to "Back to produits", produits_path %>
+  </div>
+  <div class="nav">
+    <p class="button-log">
+      <% if user_signed_in? %>
+        <%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete%>
+          <%else %>
+            <%= link_to 'Se Connecter' , new_user_session_path %>
+              <% end %>
+    </p>
+    <p class="button-log">
+      <%= link_to "Acceuil" , root_path %>
 
-  <%= button_to "Destroy this produit", @produit, method: :delete %>
+    </p>
+
+  </div>
+
+</div>
+<div class="container-vendeur">
+  <%= render @produit %>
+</div>
+
+<div class="container-nav">
+  <p class="button-nav">
+    <%= link_to "Modifer le produit" , edit_produit_path(@produit) %>
+  </p>
+  <p class="button-nav">
+    <%= link_to "liste vendeurs" , vendeurs_path %>
+  </p>
+
+
+</div>
+
+<div class="footer">
+  <a class="footer-text">Nous contacter</a>
+  <div class="logo">
+  </div>
+  <a class="footer-text">A propos</a>
+ 
+  <p></p>
 </div>

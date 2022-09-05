@@ -1,16 +1,18 @@
 .bannerContainer {
-  background-color: #FFEFAC;
+ background-image: url(image-path('vetement'));
   width: 100%;
   height: 500px;
   border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .titleBanner {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 60%;
   padding-top: 80px;
-  color: #E14A11;
-  font-size: 32px;
+  color: #fff;
+  font-size: 42px;
   font-weight: 600;
   padding-left: 30px;
 }

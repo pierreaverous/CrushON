@@ -1,10 +1,44 @@
-<h1>Editing vendeur</h1>
+<div class="container-header">
 
-<%= render "form", vendeur: @vendeur %>
+  <div class="image">
 
-<br>
+  </div>
+  <div class="nav">
+    <p class="button-log">
+      <% if user_signed_in? %>
+      <%= link_to 'Se deconnecter' , destroy_user_session_path, method: :delete%>
+      <%else %>
+      <%= link_to 'Se Connecter' , new_user_session_path %>
+      <% end %>
+    </p>
+    <p class="button-log">
+      <%= link_to "Acceuil" , root_path %>
+  
+    </p>
+    
+</div>
 
-<div>
-  <%= link_to "Show this vendeur", @vendeur %> |
-  <%= link_to "Back to vendeurs", vendeurs_path %>
+</div>
+<div class="container">
+  <div class="background">
+    <div class="container-form">
+      <h2 class="title-form">Modifier le vendeur</h2>
+      <%= render "form" , vendeur: @vendeur %>
+
+        <br>
+        <div class="buttonBack">
+          
+            <%= link_to "Retour au vendeur" , vendeur_path %>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <a class="footer-text">Nous contacter</a>
+  <div class="logo">
+  </div>
+  <a class="footer-text">A propos</a>
+ 
+  <p></p>
 </div>

@@ -1,0 +1,124 @@
+.container-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.button-Ajout-destroy {
+
+  margin-top: 20px;
+
+  button{
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 250px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}
+
+.create-product-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 360px;
+  a {
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 250px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}
+
+.button-nav {
+
+  margin-top: 20px;
+
+  a {
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 250px;
+    padding: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}
+
+.imageCard {
+  background-image: url(image-path('tShirt'));
+   width: 36%;
+   height: 100%;
+   border-radius: 8px;
+   background-repeat: no-repeat;
+   background-size: contain
+   
+   
+ }
+ .cardProduit {
+  margin-top: 50px;
+  background-color: #FFEFAC;
+  width: 33%;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+
+
+}
+
+.titleCardProduit{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #E14A11;
+  font-size: 17px;
+  margin-left: 47px;
+}
+
+.buttonBack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 360px;
+  a {
+    border-style: none;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E14A11;
+    width: 180px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+}

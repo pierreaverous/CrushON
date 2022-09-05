@@ -1,27 +1,36 @@
-<div id="<%= dom_id produit %>">
-  <p>
-    <strong>Title:</strong>
-    <%= produit.title %>
-  </p>
 
-  <p>
-    <strong>Prix:</strong>
-    <%= produit.prix %>
-  </p>
 
-  <p>
-    <strong>Marque:</strong>
-    <%= produit.marque %>
-  </p>
+  <div class="cardProduit">
+    <div class="imageCard">
+      
+    </div>
+    <div id="<%= dom_id produit %>">
+      <p class="titleCardProduit">
+        <strong>Titre:</strong>
+        <%= produit.title %>
+      </p>
+      
+      <p class="titleCardProduit">
+        <strong>Prix:</strong>
+        <%= produit.prix %>€
+      </p>
+      
+      <p class="titleCardProduit">
+        <strong>Marque:</strong>
+        <%= produit.marque %>
+      </p>
+      
+      <p class="titleCardProduit">
+        <strong>Stock:</strong>
+        <%= produit.stock %>
+      </p>
+      
+      <p class="titleCardProduit">
+        <strong>Vendeur:</strong>
+        <%= produit.vendeur.nameshop %>
+      </p>
+      
+    </div>
+    
+  </div>
 
-  <p>
-    <strong>Stock:</strong>
-    <%= produit.stock %>
-  </p>
-
-  <p>
-    <strong>Vendeur:</strong>
-    <%= produit.vendeur.nameshop %>
-  </p>
-
-</div>
