@@ -51,7 +51,6 @@ class VendeursController < ApplicationController
   # DELETE /vendeurs/1 or /vendeurs/1.json
   def destroy
     @vendeur.destroy
-
     respond_to do |format|
       format.html { redirect_to vendeurs_url, notice: "Vendeur was successfully destroyed." }
       format.json { head :no_content }
